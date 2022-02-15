@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI-Rechner</title>
+  </head>
+  <body>
+      
+    <h1>BMI - Rechner</h1>
+
+
+    
+    <main>
+     
+   <img class="emoji" src="images/kisspng-steelyard-balance-weighing-scale-weighing-planet-5a8ce00c378ac5.2894847415191818362275.png" alt="">  
+
+      <div class="bmi">
+      <div class="gewicht">
+        <label for="gewicht">Ihr Gewicht:</label>
+        <input type="text" id="gewicht"   placeholder=" z.B. 60" />
+        <p>in KG</p>
+      </div>
+
+      <div class="groesse">
+        <label for="groesse">Ihre Größe:</label>
+        <input type="text" id="groesse" placeholder="z.B. 160" />
+        <p>in cm</p>
+      </div>
+
+      <div class="geschlecht">
+        <label for="geschlecht">Ihr Geschlecht:</label>
+        <select name="geschlecht" id="geschlecht">
+          <option value="weiblich" id="weiblich">weiblich</option>
+          <option value="maennlich" id="maennlich">männlich</option>
+        </select>
+      </div>
+
+      <button onclick="calcBmi()">BMI berechnen</button>
+      <p id="bmiWert"></p> 
+    </div>
+      
+ 
+
+      <section>
+        <h2>Was ist der BMI?</h2>
+        <p>Der Body-Mass-Index, kurz BMI, ist die gebräuchlichste Formel zur Gewichtsberechnung. Er ergibt sich aus dem Verhältnis des Körpergewichts in Kilogramm und der Körpergröße in Metern zum Quadrat. Je nach Höhe des errechneten Werts unterscheidet die Deutsche Gesellschaft für Ernährung (DGE) für die Auswertung fünf Kategorien: Untergewicht, Normalgewicht, Übergewicht, extremes Übergewicht (Adipositas) und massive Adipositas.
+
+
+
+          BMI = Körpergewicht : (Körpergröße)²
+          
+          
+          
+          Ein Beispiel: Ein 30-jähriger Mann mit einem Körpergewicht von 80 Kilogramm hat bei einer Körpergröße von 1,85 Metern einen BMI von 23,37 und ist damit normalgewichtig.
+          
+          
+          
+          Ob Ihr Gewicht im grünen Bereich liegt, können Sie ganz einfach mit unserem BMI-Rechner testen. Dieser basiert auf der klassischen Formel, berücksichtigt aber zusätzlich das Alter.
+          
+          </p>
+
+          <h2>Welche Aussagekraft hat der BMI?</h2>
+          <p>Der BMI ist ein Richtwert mit einigen Schwächen. Neben der fehlenden Berücksichtigung von Alter und Geschlecht stößt der BMI vor allem auf Kritik, weil er lediglich die Körpermasse als Indikator für die Gesundheit zugrunde legt und dabei nicht zwischen Fett- und Muskelmasse unterscheidet. Wer viel Sport treibt und damit auch viel schwere Muskelmasse besitzt, kann mit der Berechnung des BMI fälschlicherweise als übergewichtig angesehen werden.
+
+
+
+            Dennoch ist der BMI eine schnelle und einfache Methode, das eigene Körpergewicht einzuordnen. Neuen wissenschaftlichen Daten zufolge scheint neben dem BMI vor allem der Bauchumfang nützlich zu sein, um die Gesundheitsgefährdung durch Übergewicht besser einzuschätzen. Daneben gibt es weitere Methoden, um das Normalgewicht zu berechnen.</p>
+
+          </section>
+          <img class="bmiTabelle" src="images/bmi.png" alt="">  
+      </main>
+    <script src="main.js"></script>
+  </body>
+</html>
